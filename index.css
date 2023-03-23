@@ -1,0 +1,279 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F2F2F2;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.mobile-leaves{
+    display: none;
+}
+
+.mobile-plantperson{
+    display: none;
+}
+
+.logo{
+    position: relative;
+    background-color: #75BC97;
+    height: 500px;
+    width: 110%;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.left-leaves{
+    position: absolute;
+    height: 500px;
+    width: 862px;
+    left: 0px;
+    top: 0px;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.right-leaves{
+    position: absolute;
+    width: 361px;
+    height: 500px;
+    left: 77%;
+    max-width: 100%;
+    top: 0px;
+}
+
+.plantperson{
+    position: absolute;
+    width: 335px;
+    height: 428px;
+    max-width: 100%;
+    left: 55%;
+    top: 36px;
+}
+
+.heading{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: 0px;
+    text-align: left;
+    position: absolute;
+    height: 252px;
+    width: 400px;
+    left: 19%;
+    top: 15%;
+    color: white;
+}
+
+.kerning{
+    position: absolute;
+    letter-spacing: 3px;
+    color: white;
+    left: 19%;
+    top: 5%;
+    font-size: 20px;
+}
+
+.menu{
+    height: 300px;
+    width: 105%;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+#sunlight{
+    height: 316px;
+    width: 221px;
+    margin-inline: 75px;
+    padding-top: 2.5%;
+}
+
+#aquaFilter{
+    height: 328px;
+    width: 219px;
+    margin-inline: 75px;
+    padding-top: 2.5%;
+}
+
+#pets{
+    height: 270px;
+    width: 219px;
+    border-radius: 0px;
+    margin-inline: 75px;
+    padding-top: 2.5%;
+}
+
+.sunlight-icon{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 75px;
+    width: 75px;
+}
+
+.water-icon{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 75px;
+    width: 103px;
+}
+
+.pets-icon{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 62px;
+    width: 75px;
+    padding-bottom: 10px;
+}
+
+.text-select{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.option-select{
+    height: 40px;
+    width: 220px;
+    border-radius: 20px;
+    padding-left: 15px;
+    color: #A8A8A8;
+    ;
+}
+
+.first-of-type{
+    display: none;
+}
+
+.content{
+    width: 100%;
+    height: fit-content;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.no-result-h1{
+    color: #A9A9A9;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+}
+
+.no-result-p{
+    height: 81px;
+    width: 219px;
+    color: #A9A9A9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: justify;
+}
+
+.no-result-img{
+    margin-left: 19%;
+    height: 203.27496337890625px;
+    width: 104.69760131835938px;
+}
+
+.arrow-down{
+    position: absolute;
+    width: 36px;
+    height: 46px;
+    color: white;
+    z-index: 2;
+    left: 19%;
+    top: 80%;
+}
+
+.image-list {
+    display: inline-flex;
+    padding-left: 20%;
+    padding-right: 25%;
+    padding-bottom: 15%;
+  }
+  
+  .image {
+    flex-basis: calc(25% - 10px);
+    margin-top: 25px;
+    height: 245px;
+    width: 206px;
+    padding: 25px;
+    color: #1E6B4E;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+  }
+  
+  .image img {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+  }
+
+@media screen and (max-width: 767px) {
+    .logo{
+        height: 543px;
+        width: 100%;
+    }
+    .mobile-leaves{
+        display: block;
+        width: 100%;
+        height: 412px;
+    }
+    .mobile-plantperson{
+        position: absolute;
+        display: block;
+        width: 276px;
+        height: 234px;
+        left: 15%;
+        bottom: 3%;
+    }
+    .heading{
+        width: 251px;
+        height: 144px;
+        font-size: 40px;
+        line-height: normal;
+        left: 10%;
+    }
+    .kerning{
+        left: 10%;
+    }
+    .arrow-down{
+        width: 35px;
+        height: 39px;
+        top: 55%;
+        left: 10%;
+    }
+    .menu{
+        display: grid;
+        padding-top: 10px;
+    }
+    .content{
+        width: 320px;
+        display: none;
+    }
+
+    .left-leaves{
+        display: none;
+    }
+    .right-leaves{
+        display: none;
+    }
+    .plantperson{
+        display: none;
+    }
+}

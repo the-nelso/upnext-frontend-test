@@ -8,10 +8,62 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <div class="logo">
+      <img class="mobile-leaves" src="images/hero/mobile/mobile-leaves.png" alt="mobile-leaves">
+      <img class="mobile-plantperson" src="images/hero/mobile/mobile-plantperson.png" alt="mobile-plantperson">
+      <img class="left-leaves" src="images\hero\desktop\left-leaves.png" alt="left-leaves">
+      <img class="plantperson" src="images/hero/desktop/plantperson.png" alt="plantperson">
+      <img class="right-leaves" src="images/hero/desktop/right-leaves.png" alt="right-leaves">
+      <h1 class="heading">Find your<br>next green<br>friend</h1>
+      <p class="kerning">green thumb.</p>
+      <img class="arrow-down" src="images/icons/arrow-down.svg" alt="arrow-down">
+    </div>
+    <div class="menu">
+      <div id="sunlight">
+        <img class="sunlight-icon" src="images/illustrations/sun.png" alt="sun">
+        <p class="text-select"><b>1.</b> Set the amount of <b>sunlight</b><br> your plant will get.</p>
+        <select class="option-select" id="sun">
+          <option class="first-of-type" value="">Select...</option>
+          <option value="no">No</option>
+          <option value="low">Low</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div id="aquaFilter">
+        <img class="water-icon" src="images/illustrations/wateringcan.png" alt="water">
+        <p class="text-select"><b>2.</b> How often do you want to<br><b>water</b> your plant.</p>
+        <select class="option-select" id="water">
+          <option class="first-of-type" value="">Select...</option>
+          <option value="regularly">Regularly</option>
+          <option value="daily">Daily</option>
+          <option value="rarely">Rarely</option>
+        </select>
+      </div>
+      <div id="pets">
+        <img class="pets-icon" src="images/illustrations/dog.png" alt="pets">
+        <p class="text-select"><b>3.</b> Do you have pets? Do<br> they <b>chew</b> plants.</p>
+        <select class="option-select" id="toxicity">
+          <option class="first-of-type" value="">Select...</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+    </div>
+    <div class="content" id="content">
+      <div>
+        <h1 class="no-result-h1">No results yet...</h1>
+        <p class="no-result-p">Use the filters to find the plant that best fits your environment :)</p>
+      </div> 
+      <img class="no-result-img" src="images/illustrations/no-results.png" alt="no-results">
+
+    </div>
+    <div class="image-list" id="imageList"></div>
+
+    <script src="index.js"></script>
+
   </body>
 </html>
