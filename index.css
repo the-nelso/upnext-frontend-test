@@ -227,6 +227,8 @@ body {
     margin-bottom: 20px;
     background-color: white;
     color: #1E6B4E;
+    width: auto;
+    height: auto;
 }
   
 .image img {
