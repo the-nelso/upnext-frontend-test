@@ -18,7 +18,7 @@ body {
     position: relative;
     background-color: #75BC97;
     height: 500px;
-    width: 110%;
+    width: 100%;
     left: 0px;
     top: 0px;
     border-radius: 0px;
@@ -29,9 +29,9 @@ body {
 .left-leaves{
     position: absolute;
     height: 500px;
-    width: 862px;
-    left: 0px;
-    top: 0px;
+    width: auto;
+    left: auto;
+    top: auto;
     max-width: 100%;
     padding: 0px;
     margin: 0px;
@@ -41,7 +41,7 @@ body {
     position: absolute;
     width: 361px;
     height: 500px;
-    left: 77%;
+    left: calc(100% - 361px);
     max-width: 100%;
     top: 0px;
 }
@@ -79,33 +79,37 @@ body {
 }
 
 .menu{
-    height: 300px;
-    width: 105%;
+    height: fit-content;
+    width: 100%;
     top: 500px;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: start;
+    padding-left: 19%;
     background-color: white;
 }
 
 #sunlight{
-    height: 316px;
-    width: 221px;
-    margin-inline: 75px;
+    position: relative;
+    height: 300px;
+    width: fit-content;
+    margin-right: 100px;
     padding-top: 2.5%;
 }
 
 #aquaFilter{
-    height: 328px;
-    width: 219px;
-    margin-inline: 75px;
+    position: relative;
+    height: 300px;
+    width: fit-content;
+    margin-right: 100px;
     padding-top: 2.5%;
 }
 
 #pets{
-    height: 270px;
-    width: 219px;
+    position: relative;
+    height: 300px;
+    width: fit-content;
     border-radius: 0px;
-    margin-inline: 75px;
+    margin-right: 100px;
     padding-top: 2.5%;
 }
 
@@ -148,19 +152,19 @@ body {
     border-radius: 20px;
     padding-left: 15px;
     color: #A8A8A8;
+    background-color: white;
 }
 
 .first-of-type{
-    display: none;
 }
 
 .content{
     width: 100%;
     height: fit-content;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
     display: inline-flex;
-    justify-content: center;
+    padding-left: 19%;
 }
 
 .no-result-h1{
@@ -182,7 +186,7 @@ body {
 }
 
 .no-result-img{
-    margin-left: 19%;
+    margin-left: 20%;  
     height: 203.27496337890625px;
     width: 104.69760131835938px;
 }
@@ -201,31 +205,36 @@ body {
     top: 80%;
 }
 
-.image-list {
-    display: inline-flex;
-    padding-left: 20%;
-    padding-right: 25%;
-    padding-bottom: 15%;
-  }
+#imageList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-bottom: 2.5%;
+}
   
-  .image {
-    flex-basis: calc(25% - 10px);
-    margin-top: 25px;
-    height: 245px;
-    width: 206px;
-    padding: 25px;
-    color: #1E6B4E;
+.image {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
-    text-align: left;
-  }
+    width: calc(20% - 10px);
+    margin-bottom: 20px;
+    background-color: white;
+    color: #1E6B4E;
+}
   
-  .image img {
+.image img {
     width: 150px;
     height: 150px;
+    justify-self: center;
     background-color: white;
-  }
+}
 
 @media screen and (max-width: 767px) {
     .logo{
@@ -265,10 +274,10 @@ body {
         display: grid;
         padding-top: 10px;
         height: 920px;
-        width: 100%;
+        width: fit-content;
     }
     .content{
-        width: 100%;
+        width: fit-content;
         height: 480px;
         display: grid;
     }
@@ -300,17 +309,17 @@ body {
         width: 104.69760131835938px;
     }
     .image-list {
-        display: grid;
+        display: -moz-grid-line;
         padding-left: 15%;
         padding-right: 10%;
         padding-bottom: 15%;
       }
       
       .image {
-        flex-basis: calc(25% - 10px);
+        flex-basis: calc(20% - 10px);
         margin-top: 25px;
-        height: 245px;
-        width: 206px;
+        height: 200px;
+        width: 200px;
         padding: 25px;
         color: #1E6B4E;
         font-size: 16px;
@@ -320,8 +329,8 @@ body {
       }
       
       .image img {
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
         background-color: white;
       }
     
