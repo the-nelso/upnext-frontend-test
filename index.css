@@ -92,7 +92,7 @@ body {
     position: relative;
     height: 300px;
     width: fit-content;
-    margin-right: 100px;
+    margin-right: 12.5%;
     padding-top: 2.5%;
 }
 
@@ -100,7 +100,7 @@ body {
     position: relative;
     height: 300px;
     width: fit-content;
-    margin-right: 100px;
+    margin-right: 12.5%;
     padding-top: 2.5%;
 }
 
@@ -109,7 +109,7 @@ body {
     height: 300px;
     width: fit-content;
     border-radius: 0px;
-    margin-right: 100px;
+    margin-right: 12.5%;
     padding-top: 2.5%;
 }
 
@@ -223,8 +223,8 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
-    width: calc(20% - 10px);
-    margin-bottom: 20px;
+    width: calc(25% - 5px);
+    margin-bottom: 5px;
     background-color: white;
     color: #1E6B4E;
     width: auto;
@@ -232,8 +232,8 @@ body {
 }
   
 .image img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     justify-self: center;
     background-color: white;
 }
@@ -276,8 +276,33 @@ body {
         display: grid;
         padding-top: 10px;
         height: 920px;
-        width: fit-content;
+        width: 100%;
     }
+
+    #sunlight{
+    position: relative;
+    height: 300px;
+    width: fit-content;
+    margin-right: 12.5%;
+    padding-top: 2.5%;
+}
+
+#aquaFilter{
+    position: relative;
+    height: 300px;
+    width: fit-content;
+    margin-right: 12.5%;
+    padding-top: 2.5%;
+}
+
+#pets{
+    position: relative;
+    height: 300px;
+    width: fit-content;
+    border-radius: 0px;
+    margin-right: 12.5%;
+    padding-top: 2.5%;
+}
     .content{
         width: fit-content;
         height: 480px;
@@ -310,14 +335,15 @@ body {
         height: 203.27496337890625px;
         width: 104.69760131835938px;
     }
+
     .image-list {
         display: -moz-grid-line;
         padding-left: 15%;
         padding-right: 10%;
         padding-bottom: 15%;
-      }
+    }
       
-      .image {
+    .image {
         flex-basis: calc(20% - 10px);
         margin-top: 25px;
         height: 200px;
@@ -328,13 +354,13 @@ body {
         font-weight: 700;
         line-height: 28px;
         text-align: left;
-      }
+    }
       
-      .image img {
+    .image img {
         width: 150px;
         height: 150px;
         background-color: white;
-      }
+    }
     
 
     .left-leaves{
